@@ -2,15 +2,25 @@ version: 2
 
 models:
   - name: product_summary
-    description: This model aggregates product data by country and product, over the past year.
-    columns:
-      - name: country             
+    description: This model aggregates product data by country and product, over the past year.                 
   
   - name: count_facilties
     description: This model gets the total sum of facilities per city.
+    columns:
+      - name: id
+        description: This is the primary key
+        tests:
+          - unique
+          - not_null
     
   - name: stg_sales
     description: This staging model renames columns from the raw data.
-  
+    columns:
+      - name: id
+        description: This is the primary key
+        tests:
+          - unique
+          - not_null
+            
       
             

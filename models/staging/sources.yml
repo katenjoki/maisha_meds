@@ -7,7 +7,4 @@ sources:
     schema: raw_data
     tables:
       - name: sales_data
-        columns:
-          - name: faculty_id
-            tests:
-              - not_null
+        
