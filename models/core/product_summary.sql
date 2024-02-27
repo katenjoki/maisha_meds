@@ -4,6 +4,8 @@
     )
 }}
 
+-- only facilities from cities containing more than 3 facilities should be included for data privacy reasons
+
 with sales_data as (
     select * from {{ ref("count_facilities") }}
 )
