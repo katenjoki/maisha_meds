@@ -1,15 +1,11 @@
-Welcome to your new dbt project!
+# Maisha Meds Data Engineering assessment
 
-### Using the starter project
+At Maisha Meds we often work with universities and research institutions who are interested in conducting studies using our data. 
 
-Try running the following commands:
-- dbt run
-- dbt test
+The researchers are interested in knowing about how many of each of the following products have been sold in each of these countries over the past year, the average price, and some information about sale dates. Only facilities from cities that contain more than 3 facilities should be included for data privacy reasons. 
 
+The final table should have the following columns:
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](https://getdbt.com/community) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+| Country | Product Name | Total Sold | Average Price | First Sale | Most Recent Sale |
+|---------|--------------|------------|---------------|------------|------------------|
+
