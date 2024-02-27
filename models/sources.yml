@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: country_sales
+    description: Contains country sales data
+    database: public
+    schema: raw_data
+    tables:
+      - name: sales_data
+        columns:
+          - name: faculty_id
+            tests:
+              - not_null
